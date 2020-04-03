@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+<!---
+LICENSE: AGPL-version-3
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+ _____                      _   _           _
+|  __ \                    | | | |         | |
+| |  | | ___  ___ ___ _ __ | |_| |     __ _| |__  ___   ___  ___
+| |  | |/ _ \/ __/ _ \ '_ \| __| |    / _` | '_ \/ __| / __|/ _ \
+| |__| |  __/ (_|  __/ | | | |_| |___| (_| | |_) \__ \_\__ \  __/
+|_____/ \___|\___\___|_| |_|\__|______\__,_|_.__/|___(_)___/\___|
+                       ~ PRESENTS ~
+
+      Name:     survive.click
+      Type:     Decentralized App (Web)
+      Year:     2020
+      Size:     64k (nope, 1.0 overshot by 148k)
+      nFuks:    4/5
+      MinRes:   320px
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+    Hello World!
+
+    I don't know how to cure virii or produce TP, but I can
+    engineer their digital counterpart.
+    This one is designed to attack your "meh"-recepticles
+    and stimulate your _PERCEPTION_ of reality.
+
+    Your mood pebble is pseudo anonymous, meaning it's securely
+    encrypted until an autonomous statistical witness or a dickwad
+    decrypts it using the public secret `K0`.
+    K0 is attached at the bottom of this document but
+    don't worry I've enclosed it in a strong cryptomantic seal,
+    your pebbles are safe!
+
+    If you can help build the ASW or do the data-cleanup or analysis or
+    make cool diagrams'n'shit - Join me!
+
+    Survive and stay comfty~
+    / telam0hn
+
+    Email: telamohn@pm.me
+    Github:  TODO: https://github.com/telamon/surive.click
+    Telegram: TODO: decentlabs url
+    Patreon: https://patr
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*-->
+<style>
+  body {
+      text-align: center;
+      font-family: Helvetica;
+  }
+  @media only screen and (max-width: 600px) {
+
+  }
+
+  h1,h2,h3 { font-weight: 100; }
+
+  form label {
+    display: inline-block;
+    text-align: center;
+    whitespace: no-wrap;
+    background-color: #e5e5e5;
+    transform: rotate(90deg);
+    border-radius: 100%;
+    font-size: 3em;
+  }
+  #c5+label { transform: rotate(270deg) scaleY(-1); }
+  #c2+label small { font-size: 0.4em; font-weight: bold; }
+  /* #c2:checked+label { }*/
+  fieldset { font-size 1.7em; }
+  legend { font-weight: 100; font-size: small; }
+  input[type="radio"]:checked+label{
+    background-color: #86ca4d;
+    animation: idle 1.5s infinite ease-in-out alternate;
+  }
+  @keyframes idle {
+    from { font-size: 3em; padding-right: 0; }
+    to { font-size: 2.7em; padding-right: 0.2em;}
+  }
+  form input[type=radio] { display: none;  }
+  code { display: block; }
+  #pickleLink { color: green; }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.5fr 1.2fr 1fr;
+  }
+  .colc { grid-column: 2 / 5; }
+  #options {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #poll {
+    /*max-width: 720px;*/
+  }
+footer .ad { color: #555; }
+button {
+  border: 1px solid #eee;
+  padding: 5px 1em;
+  margin: 3px;
+  font-weight: bold;
+  color: #555;
+}
+.subl {
+  color: #888;
+  font-weight: 100;
+}
+#social a {
+  display: inline-block;
+  border: 1px solid rgba(200,200,200,0.5);
+  padding: 5px 1em;
+  margin: 3px;
+  /* font-weight: bold; */
+  background-color: #ddd;
+  color: #777;
+  font-size: 0.7em;
+  text-decoration: none;
+  border-radius: 2px;
+}
+#replicate a:hover { background-color: #eee; }
+
+@media (max-width: 600px) {
+  #poll { grid-column: 1 / 6 }
+  form label { font-size: 2em; }
+
+  @keyframes idle {
+    from { font-size: 2em; padding-right: 0; }
+    to { font-size: 1.7em; padding-right: 0.2em;}
+  }
+}
+</style>
+  </head>
+  <body class="grid1">
+  <form id="poll" class="colc">
+    <fieldset>
+      <legend id="motd">motd#0: void says null</legend>
+      <h3>Pick A Pebble</h3>
+      <section id="options">
+        <div>
+          <input type="radio" id="c0" name="mood" value="3"/>
+          <label for="c0"><span class="r">:D</span></label>
+        </div>
+
+        <div>
+          <input type="radio" id="c1" name="mood" value="2"/>
+          <label for="c1"><span class="r">:)</span></label>
+        </div>
+
+        <div>
+          <input type="radio" id="c2" name="mood" value="1"/>
+          <label for="c2">:<small>&gt;</small></label>
+        </div>
+
+        <div>
+          <input type="radio" id="c3" name="mood" value="-1" />
+          <label for="c3">:<small>\</small></label>
+        </div>
+
+        <div>
+          <input type="radio" id="c4" name="mood" value="-2"/>
+          <label for="c4">:<small>c</small></label>
+        </div>
+
+        <div>
+          <input type="radio" id="c5" name="mood" value="-3"/>
+          <label for="c5">D:</label>
+        </div>
+      </section>
+      <section id="replicate">
+        <h3>"secretly" share it in public</h3>
+        <p id="social">
+
+          <a id="aTwttr" href="#">Twitter</a>
+          <!--  <button>tw</button>
+            <button>Fb</button>
+            <button>vK</button>
+            <button>xs</button>-->
+        </p>
+        <p style="display: none">
+          <!-- this was my fallback if above social share buttons wouldn't work
+            luckily i managed to sort it out, being a question of to little
+            or too much encodeURIComponent ;)
+          -->
+          <button id="copyButton">Copy to Clipboard</button>
+          <br/>
+          <textarea id="pickleInput"></textarea>
+        </p>
+        <small class="subl">(or plant your pickle link somewhere public)</small>
+        <br/>
+        <a id="pickleLink" href="">🥒picklelink</a>
+      </section>
+    </fieldset>
+  </form>
+  <footer class="colc">
+    <code>v1.0.0
+      <a href="view-source:" target="_new">Source</a>
+      <a href="view-source:">Issues</a>
+      <a href="view-source:">License</a>
+      <a href="#" id="panicButton">Panic!</a>
+    </code>
+    <code class="subl">Copyleft©2020 <a style="color: #888" href="http://decentlabs.se">DecentLabs</a></code>
+  </footer>
+<script src="./cryptology.min.js"></script>
+<script>
+// @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-v3-or-later
+const { Poll, Identity, VoteMsg, Buffer } = Cryptology
+const SIG_PK = Buffer.from('bc84402f1452ebb8c8436b4c0b59e878dfe826b1b493156f2a628954cf539f53', 'hex')
+const HARDPOLL = '%F0%9F%A5%92%F0%9F%97%9DvIRALxRS67jIQ2tMC1noeN/oJrG0kxVvKmKJVM9Tn1M%F0%9F%90%88WrGcbgOFA7Mw220iADfT6qkL8aWo8kfUZjGBLCZ819bqcJmO+TwzSWJMgqdLJqfEPxfJ+OgmSrDwO/t3v1W2BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMCkoI2J+skZQuEiC/SIPbiC2D+h+jEsBa2zX66kSpea0J75licq4SewWmKjIfSGVsbG8gV29ybGQhIEhvdyBhcmUgeW91IGRvaW5nPw'
+// const HARDPOLL = '%F0%9F%A5%92%F0%9F%97%9DvIRALxRS67jIQ2tMC1noeN/oJrG0kxVvKmKJVM9Tn1M=%F0%9F%90%88WNxJSAPfs0IhFJD9E2nCejBICHv8Bg1iFtm2Ga1GpgkOfz+HvzLzQZXyjsw1FuM/FZx6mHrkz4OD4YGMahn1DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0CjIIARIgv0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpioyDEhvdyBhcmUgeW91Pw=='
+
+const state = {
+  identity: null,
+  poll: null,
+  vote: {
+    value: 0,
+    geo: null
+  },
+  urlPrefix: 'https://survive.click/#',
+  absURL: null,
+  pickle: null,
+  tags: 'moodpebble,hackthecrisis'
+}
+
+const updateVote = (value) => {
+  state.vote.value = value
+  state.receipt = state.poll.packVote(state.identity, VoteMsg.encode(state.vote))
+  render()
+}
+const pMsg = `This will irrecoverably destroy
+your current keys and delete
+all traces of having used this app.
+
+Is this what you want?
+`
+const panic = ev => {
+  ev.preventDefault()
+  if (!confirm(pMsg)) return
+  localStorage.clear()
+  window.location = 'about:blank'
+}
+
+const share = (platform, ev) => {
+  console.log(platform, ev)
+  ev.preventDefault()
+  switch (platform) {
+    case 'twitter':
+      const twurl = mkTweetUrl(encodeURIComponent(state.urlPrefix) + state.pickle,
+        state.shareText, 'telamohn', state.tags)
+      console.log('Redirecting to ', twurl)
+      // window.location = twurl
+      break
+  }
+}
+
+const copyPickle = () => {
+  const copyText = document.getElementById("pickleInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  document.execCommand("copy");
+}
+
+const render = () => {
+  // Update state
+  // Render.
+  state.pickle = state.poll.pickle()
+  // const pubId = state.identity.sig.pub.toString('hex').substr(0, 8)
+  const ch = state.poll.challenge
+
+  const motd = new Date(ch.version).getYear() > 70
+    ? new Date(ch.version).toDateString() + ': ' + ch.motd
+    : `motd#${ch.version}: ${ch.motd}`
+  document.getElementById('motd').innerText = motd
+
+  state.shareText =  ch.motion || `This is my pebble 💎`
+  state.absURL = `${state.urlPrefix}${state.pickle}`
+  document.getElementById('pickleInput').value = state.absURL
+  document.getElementById('pickleLink').href = state.absURL
+  document.getElementsByName('mood').forEach(e => e.checked = e.value === '' + state.vote.value)
+  // document.getElementById('replicate').hidden = !state.vote.value
+  console.info('dom updated')
+}
+const initApp = () => {
+  // Init identity
+  const stored = localStorage.getItem('identity')
+  if (!stored) {
+    state.identity = new Identity()
+    window.localStorage.setItem('identity', Identity.encode(state.identity))
+    console.info('new identity generated')
+  } else {
+    state.identity = Identity.decode(stored)
+    console.info('existing identity loaded')
+  }
+  // Init poll
+  if (!window.location.hash.length) {
+    window.location.hash = HARDPOLL
+  }
+
+  const hcPoll = new Poll(HARDPOLL)
+  try {
+    state.poll = new Poll(window.location.hash.slice(1))
+    if (!SIG_PK.equals(state.poll.key)) throw new Error('Not my poll')
+    if (state.poll.challenge.version < hcPoll.challenge.version) {
+      throw new Error('upgrading')
+    }
+    state.poll.challenge
+  } catch(e) {
+    console.error('Failed to load poll', e)
+    console.warn('Loading default')
+    state.poll = hcPoll
+    window.location.hash = state.poll.pickle()
+  }
+  // Attach listeners
+  document.getElementsByName('mood')
+    .forEach(i => i.addEventListener('change', updateVote.bind(null, i.value)))
+  document.getElementById('copyButton').addEventListener('click', copyPickle)
+  document.getElementById('panicButton').addEventListener('click', panic)
+  document.getElementById('poll').addEventListener('submit', ev => ev.preventDefault())
+  document.getElementById('aTwttr').addEventListener('click', share.bind(null, 'twitter'))
+  // Update view
+  render()
+}
+
+document.addEventListener('readystatechange',
+  event => event.target.readyState === 'complete' && initApp())
+
+const sealed0K = `
+Please Respect My Privacy And The Privacy Of Others
+v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
+eiXBv+DUz6HEN06RpUXZntYezvy6cc+/6ceJH8mM7k8
+`
+// This research is littererily driving me insane..
+// the idea of using a trusted public secret forms a self powering belief loopback.
+function get0kWithPliers () {
+  return sealed0k.split('\n')[2]
+}
+
+
+function mkTweetUrl (url, text, via, hashtags) {
+  return 'https://twitter.com/intent/tweet?' +
+    'tw_p=tweetbutton' +
+    (hashtags ? '&hashtags=' + encodeURI(hashtags) : '') +
+    (text ? '&text=' + encodeURI(text) : '') +
+    ( via ? '&via=' + encodeURI(via) : '') +
+    '&url=' + url
+}
+// @license-end
+</script>
+  </body>
+</html>
