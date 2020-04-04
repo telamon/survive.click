@@ -85,7 +85,7 @@ a **Secure Feed**
 I have designed and implemented a microscopic cryptographically _secure feed_
 that fits inside of an **URL**
 
-Say hello to [PicoFeed](https://github.com/telamon/picofeed) (Cyber Virus RNA :exploding_head:)
+Say hello to [PicoFeed](https://github.com/telamon/picofeed) (Cyber Virus RNA 🤯)
 
 A tiny chain of blocks that infects social
 platforms and uses their databases to store and propagate the game's
