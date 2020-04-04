@@ -59,6 +59,7 @@ LICENSE: AGPL-version-3
       text-align: center;
       font-family: Helvetica;
   }
+  a, a:visited, a:hover, a:active { color: blue; }
   @media only screen and (max-width: 600px) {
 
   }
@@ -80,13 +81,12 @@ LICENSE: AGPL-version-3
   fieldset { font-size 1.7em; }
   legend { font-weight: 100; font-size: small; }
 
-  #c5:checked+label { background-color: #e66363; }
+  #c0:checked+label { background-color: #94db7a; }
   #c1:checked+label { background-color: #eacc71; }
   #c2:checked+label { background-color: #d29fc6; }
   #c3:checked+label { background-color: #91b0d9; }
   #c4:checked+label { background-color: #7fbd8c; }
-  #c0:checked+label { background-color: #333; color: red; }
-
+  #c5:checked+label { background-color: #e66363; }
   input[type="radio"]:checked+label{
     animation: idle 1.5s infinite ease-in-out alternate;
   }
@@ -165,7 +165,7 @@ button {
   <form id="poll" class="colc">
     <fieldset>
       <legend id="motd">motd#0: void says null</legend>
-      <h3>Pick A Pebble</h3>
+      <h3><small>1.</small> Pick A Pebble</h3>
       <section id="options">
         <div>
           <input type="radio" id="c0" name="mood" value="3"/>
@@ -198,7 +198,7 @@ button {
         </div>
       </section>
       <section id="replicate">
-        <h3>hide it in plain sight</h3>
+        <h3><small>2.</small> Hide it in plain sight</h3>
         <p id="social">
 
           <a id="aTw" href="#">Twyttr</a>
@@ -355,11 +355,15 @@ const sealed0K = `
 Please Respect My Privacy And The Privacy Of Others
 v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
 eiXBv+DUz6HEN06RpUXZntYezvy6cc+/6ceJH8mM7k8
+These keys are reserved for science and education,
+if you wish to use this dataset for commercial purpose, please
+fund the operation to collect, anonymize and curate
+a freely available public dataset.
 `
 // This research is littererily driving me insane..
 // the idea of using a trusted public secret forms a self powering belief loopback.
 function get0kWithPliers () {
-  return sealed0k.split('\n')[2]
+  return sealed0K.split('\n')[3]
 }
 
 
