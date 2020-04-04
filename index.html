@@ -226,7 +226,7 @@ button {
     </fieldset>
   </form>
   <footer class="colc">
-    <code>v1.0.0
+    <code>v1.0.1
       <a href="https://github.com/telamon/survive.click">Source</a>
       <a href="https://github.com/telamon/survive.click/issues">Issues</a>
       <a href="https://github.com/telamon/survive.click/blob/master/LICENSE">License</a>
@@ -355,11 +355,15 @@ const sealed0K = `
 Please Respect My Privacy And The Privacy Of Others
 v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
 eiXBv+DUz6HEN06RpUXZntYezvy6cc+/6ceJH8mM7k8
+These keys are reserved for science and education,
+if you wish to use this dataset for commercial purpose, please
+fund the operation to collect, anonymize and curate
+a freely available public dataset.
 `
 // This research is littererily driving me insane..
 // the idea of using a trusted public secret forms a self powering belief loopback.
 function get0kWithPliers () {
-  return sealed0k.split('\n')[2]
+  return sealed0K.split('\n')[3]
 }
 
 
