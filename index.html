@@ -59,7 +59,7 @@ LICENSE: AGPL-version-3
   }
 
   h1,h2,h3 { font-weight: 100; }
-
+  h3 i { font-weight: 100; }
   form label {
     display: inline-block;
     text-align: center;
@@ -74,8 +74,15 @@ LICENSE: AGPL-version-3
   /* #c2:checked+label { }*/
   fieldset { font-size 1.7em; }
   legend { font-weight: 100; font-size: small; }
+
+  #c5:checked+label { background-color: #e66363; }
+  #c1:checked+label { background-color: #eacc71; }
+  #c2:checked+label { background-color: #d29fc6; }
+  #c3:checked+label { background-color: #91b0d9; }
+  #c4:checked+label { background-color: #7fbd8c; }
+  #c0:checked+label { background-color: #333; color: red; }
+
   input[type="radio"]:checked+label{
-    background-color: #86ca4d;
     animation: idle 1.5s infinite ease-in-out alternate;
   }
   @keyframes idle {
@@ -186,14 +193,13 @@ button {
         </div>
       </section>
       <section id="replicate">
-        <h3>"secretly" share it in public</h3>
+        <h3>hide it in plain sight</h3>
         <p id="social">
 
-          <a id="aTwttr" href="#">Twitter</a>
-          <!--  <button>tw</button>
-            <button>Fb</button>
-            <button>vK</button>
-            <button>xs</button>-->
+          <a id="aTw" href="#">Twyttr</a>
+          <a id="aFb" href="#">Fäcebook</a>
+          <a id="aVk" href="#">vKontrakte</a>
+          <a id="aTg" href="#">Telegram</a>
         </p>
         <p style="display: none">
           <!-- this was my fallback if above social share buttons wouldn't work
@@ -204,9 +210,9 @@ button {
           <br/>
           <textarea id="pickleInput"></textarea>
         </p>
-        <small class="subl">(or plant your pickle link somewhere public)</small>
-        <br/>
         <a id="pickleLink" href="">🥒picklelink</a>
+        <br/>
+        <small class="subl">(or plant your pickle link somewhere public)</small>
       </section>
     </fieldset>
   </form>
@@ -258,19 +264,6 @@ const panic = ev => {
   window.location = 'about:blank'
 }
 
-const share = (platform, ev) => {
-  console.log(platform, ev)
-  ev.preventDefault()
-  switch (platform) {
-    case 'twitter':
-      const twurl = mkTweetUrl(encodeURIComponent(state.urlPrefix) + state.pickle,
-        state.shareText, 'telamohn', state.tags)
-      console.log('Redirecting to ', twurl)
-      // window.location = twurl
-      break
-  }
-}
-
 const copyPickle = () => {
   const copyText = document.getElementById("pickleInput");
   copyText.select();
@@ -294,6 +287,14 @@ const render = () => {
   state.absURL = `${state.urlPrefix}${state.pickle}`
   document.getElementById('pickleInput').value = state.absURL
   document.getElementById('pickleLink').href = state.absURL
+  // Setup social links
+  const eURL = encodeURIComponent(state.urlPrefix) + state.pickle
+  const eText = encodeURIComponent(state.shareText)
+  document.getElementById('aTw').href = mkTweetUrl(eURL, eText, null, state.tags)
+  document.getElementById('aFb').href = 'https://facebook.com/sharer/sharer.php?u=' + eURL
+  document.getElementById('aVk').href = 'http://vk.com/share.php?title=' + eText + '&url=' + eURL
+  document.getElementById('aTg').href = 'https://telegram.me/share/url?text=' + eText + '&url=' + eURL
+  // Reflect selection
   document.getElementsByName('mood').forEach(e => e.checked = e.value === '' + state.vote.value)
   // document.getElementById('replicate').hidden = !state.vote.value
   console.info('dom updated')
@@ -334,7 +335,6 @@ const initApp = () => {
   document.getElementById('copyButton').addEventListener('click', copyPickle)
   document.getElementById('panicButton').addEventListener('click', panic)
   document.getElementById('poll').addEventListener('submit', ev => ev.preventDefault())
-  document.getElementById('aTwttr').addEventListener('click', share.bind(null, 'twitter'))
   // Update view
   render()
 }
@@ -358,8 +358,8 @@ function mkTweetUrl (url, text, via, hashtags) {
   return 'https://twitter.com/intent/tweet?' +
     'tw_p=tweetbutton' +
     (hashtags ? '&hashtags=' + encodeURI(hashtags) : '') +
-    (text ? '&text=' + encodeURI(text) : '') +
-    ( via ? '&via=' + encodeURI(via) : '') +
+    (text ? '&text=' + text : '') +
+    ( via ? '&via=' + via : '') +
     '&url=' + url
 }
 // @license-end
