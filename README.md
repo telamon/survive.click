@@ -2,7 +2,7 @@
 
 # survive.click
 
-> An artificial pandemic of happniess
+> **An artificial pandemic of happniess**
 
 ![Picture of the game](./screen2.png)
 
