@@ -9,7 +9,7 @@
     "index.js"
   ],
   "scripts": {
-    "build": "build.js",
+    "build": "node build.js",
     "lint": "standard",
     "prepublishOnly": "npm test"
   },

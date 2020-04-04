@@ -5,7 +5,11 @@ const { readFileSync, writeFileSync, mkdirSync } = require('fs')
 const { join } = require('path')
 const root = 'dist'
 mkdirSync(root, { recursive: true })
-const html = readFileSync('index.html')
-const js = readFileSync('cryptology.min.js')
-html.replace('<script src="cryptology.min.js"></script>', `<script>${js}</script>`)
-writeFileSync(join(root, 'index.html'))
+const html = readFileSync('index.html').toString('utf8')
+const js = readFileSync('cryptology.min.js').toString('utf8')
+
+const combined = html.replace(
+  '<script src="./cryptology.min.js"></script>',
+  `<script>${js}</script>`
+)
+writeFileSync(join(root, 'index.html'), combined)
