@@ -298,7 +298,7 @@ const render = () => {
   document.getElementById('aTw').href = mkTweetUrl(eURL, eText, null, state.tags)
   document.getElementById('aFb').href = 'https://facebook.com/sharer/sharer.php?u=' + eURL
   document.getElementById('aVk').href = 'http://vk.com/share.php?title=' + eText + '&url=' + eURL
-  document.getElementById('aTg').href = 'https://telegram.me/share/url?text=' + eText + '&url=' + eURL
+  // document.getElementById('aTg').href = 'https://telegram.me/share/url?text=' + eText + '&url=' + eURL
   // Reflect selection
   document.getElementsByName('mood').forEach(e => e.checked = e.value === '' + state.vote.value)
   // document.getElementById('replicate').hidden = !state.vote.value

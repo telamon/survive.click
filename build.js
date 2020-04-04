@@ -3,7 +3,7 @@
 // your code starts here
 const { readFileSync, writeFileSync, mkdirSync } = require('fs')
 const { join } = require('path')
-const root = 'dist'
+const root = 'docs' // gh pages
 mkdirSync(root, { recursive: true })
 const html = readFileSync('index.html').toString('utf8')
 const js = readFileSync('cryptology.min.js').toString('utf8')
