@@ -1,7 +1,7 @@
 {
   "name": "survive.click",
   "version": "0.0.1",
-  "description": "placeholder",
+  "description": "DecentralizedSingleFileViralWebApp",
   "main": "index.js",
   "files": [
     "lib",
@@ -9,15 +9,13 @@
     "index.js"
   ],
   "scripts": {
-    "test": "tape test/*.js",
-    "debug": "node inspect $(npm bin)/tape test/*.js",
+    "build": "build.js",
     "lint": "standard",
     "prepublishOnly": "npm test"
   },
   "dependencies": {},
   "devDependencies": {
-    "standard": "^14.3.1",
-    "tape": "^4.11.0"
+    "standard": "^14.3.1"
   },
   "repository": {
     "type": "git",
@@ -33,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/telamon/survive.click/issues"
   },
+  "private": true,
   "homepage": "https://github.com/telamon/survive.click#readme"
 }
