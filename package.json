@@ -10,19 +10,20 @@
   ],
   "scripts": {
     "build": "node build.js",
+    "start": "serve .",
     "lint": "standard",
     "prepublishOnly": "npm test"
   },
   "dependencies": {},
   "devDependencies": {
+    "serve": "^11.3.0",
     "standard": "^14.3.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/telamon/survive.click.git"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": {
     "name": "Tony Ivanov",
     "email": "telamohn@pm.me"
