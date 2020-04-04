@@ -2,7 +2,7 @@
 
 # survive.click
 
-> An artificial pandemic of happniess
+> **An artificial pandemic of happniess**
 
 ![Picture of the game](./screen2.png)
 
@@ -54,7 +54,7 @@ Don't believe me? Just imagine that the leftmost pebble indicates `no infection`
 the rightmost signifes a `diagnosed case`. I've already hidden a few pebbles out there,
 try and find them if you can [:>](https://survive.click/#%F0%9F%A5%92%F0%9F%97%9DvIRALxRS67jIQ2tMC1noeN%2FoJrG0kxVvKmKJVM9Tn1M%F0%9F%90%88WrGcbgOFA7Mw220iADfT6qkL8aWo8kfUZjGBLCZ819bqcJmO%2BTwzSWJMgqdLJqfEPxfJ%2BOgmSrDwO%2Ft3v1W2BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMCkoI2J%2BskZQuEiC%2FSIPbiC2D%2Bh%2BjEsBa2zX66kSpea0J75licq4SewWmKjIfSGVsbG8gV29ybGQhIEhvdyBhcmUgeW91IGRvaW5nPw%F0%9F%97%9DLoFdpyN6w89lfGU0iOdSmAtE7191nTy1f5hYHbn3uW0%F0%9F%90%88TuFHJ7%2Bsy%2F0nqgKelQf2taVUV0dzF%2BFADT8VJ4%2B%2BpL%2F7%2B74mZsSfkgbOvxbW%2FR2BH2ku2RLaMyi5%2BcXWdqWTAVqxnG4DhQOzMNttIgA30%2BqpC%2FGlqPJH1GYxgSwmfNfW6nCZjvk8M0liTIKnSyanxD8XyfjoJkqw8Dv7d79VtgQAAACjEqABClC0bCaPiRlFLUIIK7uYVJflDXUebXpyqmgRUyAe8dghQZB%2B5G0VdoJ3f1UnNem2RAuGW7%2FRPGp4LbVwAB8ocnXSfEmksL9HEY9ZzdhDytO0gxIqYEffrYJcNLTSiFIP9xj9RRm9IrZ7ollgOmLU21LW%2FJiEmLRliP7VNbXFGiBZGlR11SUZHCb3lsjklhcmDd4GG9UJ1uev%2BrMCfSgoZw)
 
-![Picture of first prototype](./screen2.png)
+![Picture of first prototype](./screen1.png)
 Screenshot of the first prototype, I ended up with some scope
 cuts due to funding constraints.
 
