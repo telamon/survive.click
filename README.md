@@ -118,6 +118,12 @@ the decentralized anonymous voting system (**caugh** Experimental Toy voting sys
 
 Enjoy!
 
+Here are the keys you need to collect votes,
+which is going to be my next project.
+```
+v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
+eiXBv+DUz6HEN06RpUXZntYezvy6cc+/6ceJH8mM7k8
+```
 
 ```ad
  _____                      _   _           _
