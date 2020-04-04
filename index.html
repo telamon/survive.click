@@ -48,8 +48,8 @@ LICENSE: AGPL-version-3
     Survive and stay comfty~
     / telam0hn <telamohn@pm.me>
 
-    Website: https://survive.click
     Github: https://github.com/telamon/survive.click
+    Discord: https://discord.gg/K5XjmZx
     Telegram: https://t.me/decentlabs_se
     Patreon: https://www.patreon.com/decentlabs
 
@@ -292,7 +292,7 @@ const render = () => {
     : `motd#${ch.version}: ${ch.motd}`
   document.getElementById('motd').innerText = motd
 
-  state.shareText =  ch.motion || `This is my pebble 💎`
+  state.shareText =  ch.motion || `This is my pebble`
   state.absURL = `${state.urlPrefix}${state.pickle}`
   document.getElementById('pickleInput').value = state.absURL
   document.getElementById('pickleLink').href = state.absURL
