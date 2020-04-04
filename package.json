@@ -1,7 +1,7 @@
 {
   "name": "survive.click",
   "version": "0.0.1",
-  "description": "DecentralizedSingleFileViralWebApp",
+  "description": "Decentralized Single File Viral WebApp",
   "main": "index.js",
   "files": [
     "lib",
