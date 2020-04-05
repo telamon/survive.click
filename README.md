@@ -57,7 +57,7 @@ The game itself is so small that it requires virtually
 zero resources and can sustain itself on the scraps left by our digital society.
 
 **Next step** is to design the 'collector'-ant whose sole purpose will be
-to collect pebbles, decrypt them and attach labels on 'where' and 'when' it was collected.
+to collect pebbles, decrypt them and attach labels on _where_ and _when_ it was collected.
 
 In other words enriching the data with real business value.
 
