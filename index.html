@@ -210,18 +210,17 @@ button {
           <a id="aTg" href="#">Telegram</a>
           -->
         </p>
-        <p style="display: none">
+        <p>
           <!-- this was my fallback if above social share buttons wouldn't work
             luckily i managed to sort it out, being a question of to little
             or too much encodeURIComponent ;)
           -->
-          <button id="copyButton">Copy to Clipboard</button>
+          <a id="pickleLink" href="">🥒pebblelink</a>
           <br/>
-          <textarea id="pickleInput"></textarea>
+          <small class="subl">(or plant your pebblelink anywhere 🤖 can see)</small>
+          <br/>
+          <input type="text" id="pickleInput">
         </p>
-        <a id="pickleLink" href="">🥒picklelink</a>
-        <br/>
-        <small class="subl">(or plant your pickle link anywhere 🤖 can see)</small>
       </section>
     </fieldset>
   </form>
@@ -272,11 +271,13 @@ const panic = ev => {
   window.location = 'about:blank'
 }
 
-const copyPickle = () => {
-  const copyText = document.getElementById("pickleInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-  document.execCommand("copy");
+const copyPickle = ev => {
+  ev.preventDefault()
+  const copyText = document.getElementById("pickleInput")
+  copyText.select()
+  copyText.setSelectionRange(0, 99999) /*For mobile devices*/
+  document.execCommand("copy")
+  alert('Pebblelink copied to clipboard')
 }
 
 const render = () => {
@@ -340,7 +341,7 @@ const initApp = () => {
   // Attach listeners
   document.getElementsByName('mood')
     .forEach(i => i.addEventListener('change', updateVote.bind(null, i.value)))
-  document.getElementById('copyButton').addEventListener('click', copyPickle)
+  document.getElementById('pickleLink').addEventListener('click', copyPickle)
   document.getElementById('panicButton').addEventListener('click', panic)
   document.getElementById('poll').addEventListener('submit', ev => ev.preventDefault())
   // Update view
