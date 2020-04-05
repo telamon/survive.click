@@ -12,21 +12,21 @@ on a global scale and in _real time_.
 I suggest that we combine all the public platforms in the world into on single
 massive database capable of holding a living data set.
 
-> Combine all the computers in the world into one big computer?! That's Impossible!
+> Combine all the computers in the world into one big computer?! But that's impossible!
 
-I can't tell you if it's a sane idea but I can _show_ you that it is
+I can't tell you if it's sane or not but I can _show_ you that it is
 entierly possible:
 
-Using modern computer science nameley cryptographically [Secure Ledgers](https://pfrazee.hashbase.io/blog/secure-ledgers-dont-require-proof-of-work)
+Using modern computer science - cryptographically [Secure Ledgers](https://pfrazee.hashbase.io/blog/secure-ledgers-dont-require-proof-of-work) to be specific.
 
-I have created a viral mini game that treats any and all platforms as it's personal database - demonstrating completely decentralized metrics storage.
+I have created a viral mini game that treats any and all platforms as it's own personal database - demonstrating completely decentralized metrics storage without user registrations.
 
-The software has no server of it's own and lives,
+The software has no server of it's own and lives
 entierly on freely available resources.
 
 Yes it is a "cloud virus", but it's a friendly happy virus that I hope will spread.
 
-![Picture of the game](./screen2.png)
+![Picture of the game](./screen2.png|width=300)
 
 ## <a name="Play"></a>  How to play
 
