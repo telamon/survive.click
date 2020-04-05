@@ -49,7 +49,7 @@ In order for our data analysts and journalists to create content [like this](htt
 They need to be given free access to clean fresh data.
 
 If we think of the combined super computer mentioned above 
-as an ant colony, it is easier to imagine a self-organising hyper system.
+as an ant colony, it is easier to imagine the self-organising hyper system that I am about to propose.
 
 This game is but one type of ant that inhabits the imagined hive.
 It has a single purpose to generate cryptograpihcally unique data (pebbles) in order to survive.
@@ -62,25 +62,34 @@ to collect pebbles, decrypt them and attach labels on 'where' and 'when' it has 
 In other words enriching the data with real business value.
 
 **Final problem**
-How do we deliver the data to our analysts within timing constraints?
+
+Ok, so now we have generated the data and we've cleaned it
+but how do we do we deliver it to our analysts?
 
 As it turns out, we're lucky! 
-This problem has already been solved by our brilliant neighbours, they call it the [hypercore](https://github.com/mafintosh/hypercore).
-It's in a another type of decentralized crypto feed that excels at distribution.
+
+This problem has already been solved by another community of brilliant hackers.
+They've created a type secure feed that excels at distribution.
+
+The [hypercore](https://github.com/mafintosh/hypercore) is really efficient
+at copying data from one computer to many.
 
 I plan to design the collector-ant to record the enriched statements in such feeds.
 
 ```
-This will give our analysts unrestricted and immediate access to a stream of clean data.
+This will give our analysts unrestricted and immediate access to a stream of clean fresh data.
 ```
 
-And the best part is, the ants are designed in such a way that anyone is free
-to create their own breed or create their own hyper system.
+And what I believe is the absolutely best part; 
+Is that the architecture is designed in such a way that anyone is free
+to create their own breed of ants or design their own hyper system.
 
-All you have to do is grab a name, and ask a different question:
+All you have to do is grab a name, and ask a different question
+
 
 <img src="./screen1.png" width="300" alt="Picture of the game"/>
 
+If people find your software useful, then it will [survive](https://survive.click/#PIC0FDSPKEYvIRALxRS67jIQ2tMC1noeN%2FoJrG0kxVvKmKJVM9Tn1MBLOCKX5S7wlL2%2BTCaZLOTNHUpVQA6jRa208zIgi7r7CaxGW6QntfHnoLvoVqHp%2FSc%2FyvM4Rz7oyhP7ZTGoA6x5u9YCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMCkoIuteAtpQuEiC%2FSIPbiC2D%2Bh%2BjEsBa2zX66kSpea0J75licq4SewWmKjIfSGVsbG8gV29ybGQhIEhvdyBhcmUgeW91IGRvaW5nPwSPKEYgZ9ldziyRmgi0xgrx66NAWMlPeRl%2BVVzzfdz%2BpqxpUwBLOCKLc8ul35z9yL2LMtkiSTUqVoZbMQB7LGawncUVabz89KHO9AA0Nk1%2FMSWUmmd%2FmELU7hoQY6CLq8Rsr%2BnMC1HCF%2BUu8JS9vkwmmSzkzR1KVUAOo0WttPMyIIu6%2BwmsRlukJ7Xx56C76Fah6f0nP8rzOEc%2B6MoT%2B2UxqAOsebvWAgAAACjEqABClBzd%2BqGwYC4wmhwNSuxHq5LAEaJ4u3a9UXKzFipi0GaDiKOM98jM%2B7s%2BcefecoHktFVqIQPWjvLaaX8bIJak6G%2FO8Yyyqcm0TN%2BXI2CLOt7MxIqdOgpXjXKhc6Ji8v3zf%2FH51jG9vrz5U24n1iK0Lx1tLSkzzqn28ukxuOxGiD0k1lQQ7UKUetTed2x1SDOxIOn974%2BUjU%2B7I%2Bk2oN%2Bcg).
 
 ## Architecture Design notes
 
