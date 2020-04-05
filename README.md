@@ -23,7 +23,7 @@ I have created a viral mini game that treats any and all platforms as it's own p
 The software has no server of it's own and lives
 entierly on freely available resources.
 
-Yes it is a "cloud virus" - but it's a friendly happy virus that I hope will spread.
+Yes it is a "cloud virus" - but it's a friendly happy virus that we humans are immune to.
 
 
  <img src="./screen2.png" width="300" alt="Picture of the game"/>
