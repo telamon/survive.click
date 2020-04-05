@@ -39,8 +39,10 @@ For now, that's it!
 We're currently working on the expansion that will include
 flashy graphs and diagrams and also maps support!
 
-
-But wait a moment.. how does this help create a system able to contain a pandemic?
+## Wait a moment..
+```
+How does this help create a system able to contain a pandemic?
+```
 
 In order for our data analysts and journalists to create content [like this](https://www.svt.se/datajournalistik/har-sprider-sig-coronaviruset/)
 
