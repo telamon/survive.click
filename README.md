@@ -25,9 +25,20 @@ entierly on freely available resources.
 
 Yes, it is a "cloud virus" - but it's a friendly happy virus that we, humans, are immune to.
 
-
+## <a name="Play"></a>  How to play
  <img src="./screen2.png" width="300" alt="Picture of the game"/>
- 
+The rules are simple
+
+```
+Once a day or once a week hide an mood pebble
+somewhere in public to let us know you're still playing.
+```
+For now, that's it!
+
+
+We're currently working on the expansion that will include
+flashy graphs and diagrams and also maps support!
+
 
 But wait a moment.. how does this help create a system able to contain a pandemic?
 
@@ -35,26 +46,27 @@ In order for our data analysts and journalists to create content [like this](htt
 
 They need to be given free access to clean fresh data.
 
-If we think of the combined super computer mentioned above, 
-as an ant colony it is easier to imagine a self organizing hyper system.
+If we think of the combined super computer mentioned above 
+as an ant colony, it is easier to imagine a self-organising hyper system.
 
 This game is but one type of ant that inhabits the imagined hive.
 It has a single purpose to generate cryptograpihcally unique data (pebbles) in order to survive.
 The game itself is so small that it requires virtually
 zero resources and can sustain itself on the scraps left by our digital society.
 
-**Next step** is to design the 'collector'-ant who's sole purpose will be
-to collect pebbles, anonymize them and attach labels on 'where' and 'when' it was collected,
+**Next step** is to design the 'collector'-ant whose sole purpose will be
+to collect pebbles, decrypt them and attach labels on 'where' and 'when' it has been collected-
 
 In other words enriching the data with real business value.
 
 **Final problem**
 How do we deliver the data to our analysts within timing constraints?
 
-As it turns out, we're lucky! This problem has already been solved by our brilliant neighbours, they call it the [hypercore](https://github.com/mafintosh/hypercore).
+As it turns out, we're lucky! 
+This problem has already been solved by our brilliant neighbours, they call it the [hypercore](https://github.com/mafintosh/hypercore).
 It's in a another type of decentralized crypto feed that excels at distribution.
 
-I plan to design the collector-program to record the enriched statements in such feeds.
+I plan to design the collector-ant to record the enriched statements in such feeds.
 
 ```
 This will give our analysts unrestricted and immediate access to a stream of clean data.
@@ -67,19 +79,6 @@ All you have to do is grab a name, and ask a different question:
 
 <img src="./screen1.png" width="300" alt="Picture of the game"/>
 
-## <a name="Play"></a>  How to play
-
-The rules are simple
-
-```
-Once a day or once a week hide an mood pebble
-somewhere in public to let us know you're still playing.
-```
-For now, that's it!
-
-
-We're currently working on the expansion that will include
-flashy graphs and diagrams and also maps support!
 
 ## Architecture Design notes
 
