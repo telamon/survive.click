@@ -48,11 +48,11 @@ to collect pebbles, anonymize them and attach labels on 'where' and 'when' it wa
 
 In other words enriching the data with real business value.
 
-Final problem on how to deliver the data to our analysts within timing constraints has already been
-solved by our brilliant neighbours: [hypercore](https://github.com/mafintosh/hypercore)
+Final problem on how to deliver the data to our analysts within timing constraints.
+We're lucky it has already been solved by our brilliant neighbours, they call it the [hypercore](https://github.com/mafintosh/hypercore).
+It's in a another type of decentralized crypto feed that excels at distribution.
 
-I plan to design the collector-program to record the enriched statements in a another decentralized
-crypto feed that excels at distribution.
+I plan to design the collector-program to record the enriched statements in such feeds.
 
 ```
 This will give our analysts unrestricted and immediate access to a stream of clean data.
