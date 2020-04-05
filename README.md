@@ -152,10 +152,6 @@ v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
 eiXBv+DUz6HEN06RpUXZntYezvy6cc+/6ceJH8mM7k8
 ```
 
- <img src="./screen1.png" width="300" alt="Early prototype"/>
-
-
-
 ```ad
  _____                      _   _           _
 |  __ \   Help Wanted!     | | | |         | |
