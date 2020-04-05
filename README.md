@@ -10,7 +10,10 @@ on a global scale and in _real time_.
 I suggest that we combine all the public platforms into on single
 massive database capable of processing a global living dataset.
 
-> Combine all the computers in the world into one big computer?! But that's impossible!
+```
+Combine all the computers in the world into one big computer?!
+But that's impossible!
+```
 
 I can't tell you if it's sane or not but I can _show_ you that it is
 entierly possible:
