@@ -39,7 +39,7 @@ If we think of the combined super computer mentioned above,
 as an ant colony it is easier to imagine a self organizing hyper system.
 
 This game is but one type of ant that inhabits the imagined hive.
-It has a single purpose to generate cryptograpihcally unique data (pebbles) in order to stay alive (survive).
+It has a single purpose to generate cryptograpihcally unique data (pebbles) in order to survive.
 The game itself is so small that it requires virtually
 zero resources and can sustain itself on the scraps left by our digital society.
 
