@@ -2,8 +2,6 @@
 
 > **An artificial pandemic of happniess**
 
-
-
 In order to create a system that can track a pandemic
 on a global scale and in _real time_.
 
@@ -29,6 +27,43 @@ Yes it is a "cloud virus" - but it's a friendly happy virus that I hope will spr
 
 
  <img src="./screen2.png" width="300" alt="Picture of the game"/>
+ 
+
+But wait a moment.. how does this help create a system able to contain a pandemic?
+
+In order for our data analysts and journalists to create content [like this](https://www.svt.se/datajournalistik/har-sprider-sig-coronaviruset/)
+
+They need to be given free access to clean fresh data.
+
+If we think of the combined super computer mentioned above, 
+as an ant colony it is easier to imagine a self organizing hyper system.
+
+This game is but one type of ant that inhabits the imagined hive.
+It has a single purpose to generate cryptograpihcally unique data (pebbles) in order to stay alive (survive).
+The game itself is so small that it requires virtually
+zero resources and can sustain itself on the scraps left by our digital society.
+
+My next step is to design the 'collector'-ant who's sole purpose will be
+to collect pebbles, anonymize them and attach labels on 'where' and 'when' it was collected,
+
+In other words enriching the data with real business value.
+
+Final problem on how to deliver the data to our analysts within timing constraints has already been
+solved by our brilliant neighbours: [hypercore](https://github.com/mafintosh/hypercore)
+
+I plan to design the collector-program to record the enriched statements in a another decentralized
+crypto feed that excels at distribution.
+
+```
+This will give our analysts unrestricted and immediate access to a stream of clean data.
+```
+
+And the best part is, the ants are designed in such a way that anyone is free
+to create their own breed or create their own hyper system.
+
+All you have to do is grab a name, and ask a different question:
+
+<img src="./screen1.png" width="300" alt="Picture of the game"/>
 
 ## <a name="Play"></a>  How to play
 
@@ -46,7 +81,7 @@ flashy graphs and diagrams and also maps support!
 
 ## Architecture Design notes
 
-This game is a tiny cyber organism that does everything it can
+The game is a tiny cyber organism that does everything it can
 to surivive.
 
 Every time the user shares it's link the game has a chance to recruit
