@@ -27,8 +27,8 @@ Yes, it is a "cloud virus" - but it's a friendly happy virus that we, humans, ar
 
 ## <a name="Play"></a>  How to play
  <img src="./screen2.png" width="300" alt="Picture of the game"/>
-The rules are simple
 
+#### Rule #1
 ```
 Once a day or once a week hide an mood pebble
 somewhere in public to let us know you're still playing.
@@ -37,7 +37,7 @@ For now, that's it!
 
 
 We're currently working on the expansion that will include
-flashy graphs and diagrams and also maps support!
+flashy graphs and diagrams and also support live maps!
 
 ## Wait a moment..
 ```
