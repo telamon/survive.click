@@ -26,7 +26,8 @@ entierly on freely available resources.
 
 Yes it is a "cloud virus", but it's a friendly happy virus that I hope will spread.
 
-![Picture of the game](./screen2.png|width=300)
+
+ <img src="./screen2.png" width="300" alt="Picture of the game"/>
 
 ## <a name="Play"></a>  How to play
 
@@ -111,6 +112,10 @@ and anonymization of the data is my next step in this project.
 v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
 eiXBv+DUz6HEN06RpUXZntYezvy6cc+/6ceJH8mM7k8
 ```
+
+ <img src="./screen1.png" width="300" alt="Early prototype"/>
+
+
 
 ```ad
  _____                      _   _           _
