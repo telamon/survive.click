@@ -7,8 +7,8 @@
 In order to create a system that can track a pandemic
 on a global scale and in _real time_.
 
-I suggest that we combine all the public platforms in the world into on single
-massive database capable of holding a living data set.
+I suggest that we combine all the public platforms into on single
+massive database capable of processing a global living dataset.
 
 > Combine all the computers in the world into one big computer?! But that's impossible!
 
@@ -22,7 +22,7 @@ I have created a viral mini game that treats any and all platforms as it's own p
 The software has no server of it's own and lives
 entierly on freely available resources.
 
-Yes it is a "cloud virus", but it's a friendly happy virus that I hope will spread.
+Yes it is a "cloud virus" - but it's a friendly happy virus that I hope will spread.
 
 
  <img src="./screen2.png" width="300" alt="Picture of the game"/>
