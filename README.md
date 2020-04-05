@@ -43,13 +43,15 @@ It has a single purpose to generate cryptograpihcally unique data (pebbles) in o
 The game itself is so small that it requires virtually
 zero resources and can sustain itself on the scraps left by our digital society.
 
-My next step is to design the 'collector'-ant who's sole purpose will be
+**Next step** is to design the 'collector'-ant who's sole purpose will be
 to collect pebbles, anonymize them and attach labels on 'where' and 'when' it was collected,
 
 In other words enriching the data with real business value.
 
-Final problem on how to deliver the data to our analysts within timing constraints.
-We're lucky it has already been solved by our brilliant neighbours, they call it the [hypercore](https://github.com/mafintosh/hypercore).
+**Final problem**
+How do we deliver the data to our analysts within timing constraints?
+
+As it turns out, we're lucky! This problem has already been solved by our brilliant neighbours, they call it the [hypercore](https://github.com/mafintosh/hypercore).
 It's in a another type of decentralized crypto feed that excels at distribution.
 
 I plan to design the collector-program to record the enriched statements in such feeds.
