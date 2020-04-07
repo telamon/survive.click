@@ -10,6 +10,19 @@
 LICENSE: AGPL-version-3
 
 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  Hello Developer!
+  If you are reading this, it means that you have found your way
+  to the mothermodem - the heart of a the server.
+
+  I left my pebble debugging toolsbox down here, and it contains
+  very powerful stuff.
+
+  Like for instance the True Hammer of Sanity.
+
+  Use it carefully and responsibly and only on your own pebbles,
+  or you might end up with unexpected facts.
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
  _____                      _   _           _
 |  __ \                    | | | |         | |
 | |  | | ___  ___ ___ _ __ | |_| |     __ _| |__  ___   ___  ___
@@ -66,7 +79,7 @@ LICENSE: AGPL-version-3
 
   h1,h2,h3 { font-weight: 100; }
   h3 i { font-weight: 100; }
-  form label {
+  #options label {
     display: inline-block;
     text-align: center;
     whitespace: no-wrap;
@@ -150,6 +163,8 @@ button {
 }
 #replicate a:hover { background-color: #eee; }
 
+#encryptText { border: 1px solid grey }
+
 @media (max-width: 600px) {
   #poll { grid-column: 1 / 6 }
   form label { font-size: 2em; }
@@ -199,8 +214,15 @@ button {
       </section>
       <section id="replicate">
         <h3><small>2.</small> Hide it in plain sight</h3>
+        <div class="motionContainer">
+          <small class="subl">customize message</small><br/>
+          <textarea id="motion" placeholder="motion"></textarea>
+          <input id="encryptText" type="checkbox"/>
+          <label for="encryptText"><small class="subl">E?</small></label>
+          <br/>
+          <code id="charCount"></code>
+        </div>
         <p id="social">
-
           <a id="aTw" href="#">Twyttr</a>
           <a id="aFb" href="#">Fäcebook</a>
           <a id="aVk" href="#">vKontrakte</a>
@@ -211,10 +233,6 @@ button {
           -->
         </p>
         <p>
-          <!-- this was my fallback if above social share buttons wouldn't work
-            luckily i managed to sort it out, being a question of to little
-            or too much encodeURIComponent ;)
-          -->
           <a id="pickleLink" href="">🥒pebblelink</a>
           <br/>
           <small class="subl">(or plant your pebblelink anywhere 🤖 can see)</small>
@@ -225,7 +243,7 @@ button {
     </fieldset>
   </form>
   <footer class="colc">
-    <code>v1.0.0
+    <code>v1.1.0
       <a href="https://github.com/telamon/survive.click">Source</a>
       <a href="https://github.com/telamon/survive.click/issues">Issues</a>
       <a href="https://github.com/telamon/survive.click/blob/master/LICENSE">License</a>
@@ -292,10 +310,15 @@ const render = () => {
     : `motd#${ch.version}: ${ch.motd}`
   document.getElementById('motd').innerText = motd
 
-  state.shareText =  ch.motion || `This is my pebble`
+  document.getElementById('motion').value = state.shareText
+
+
   state.absURL = `${state.urlPrefix}${state.pickle}`
   document.getElementById('pickleInput').value = state.absURL
   document.getElementById('pickleLink').href = state.absURL
+
+  document.getElementById('charCount')
+    .innerText = `${state.shareText.length} / 200`
   // Setup social links
   const eURL = encodeURIComponent(state.urlPrefix) + state.pickle
   const eText = encodeURIComponent(state.shareText)
@@ -308,6 +331,7 @@ const render = () => {
   // document.getElementById('replicate').hidden = !state.vote.value
   console.info('dom updated')
 }
+
 const initApp = () => {
   // Init identity
   const stored = localStorage.getItem('identity')
@@ -338,12 +362,22 @@ const initApp = () => {
     state.poll = hcPoll
     window.location.hash = state.poll.pickle()
   }
+
+  state.shareText = state.poll.challenge.motion || `This is my pebble`
   // Attach listeners
   document.getElementsByName('mood')
     .forEach(i => i.addEventListener('change', updateVote.bind(null, i.value)))
   document.getElementById('pickleLink').addEventListener('click', copyPickle)
   document.getElementById('panicButton').addEventListener('click', panic)
   document.getElementById('poll').addEventListener('submit', ev => ev.preventDefault())
+
+  const shareTextInput = document.getElementById('motion')
+  const setShareText = ev => {
+    state.shareText = shareTextInput.value
+    render()
+  }
+  shareTextInput.addEventListener('change', setShareText)
+  shareTextInput.addEventListener('keyup', setShareText)
   // Update view
   render()
 }
@@ -351,6 +385,8 @@ const initApp = () => {
 document.addEventListener('readystatechange',
   event => event.target.readyState === 'complete' && initApp())
 
+// Thor's hammer was equipped with a eternitystone, pfft!
+// my hammer slots 0K.
 const sealed0K = `
 Please Respect My Privacy And The Privacy Of Others
 v0iD24gtg/ofoxLAWts1+upEqXmtCe+ZYnKuEnsFpio
