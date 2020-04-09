@@ -1,23 +1,28 @@
 {
   "name": "survive.click",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Decentralized Single File Viral WebApp",
-  "main": "index.js",
-  "files": [
-    "lib",
-    "bin",
-    "index.js"
-  ],
   "scripts": {
-    "build": "node build.js",
-    "start": "serve .",
+    "build": "rollup -c",
+    "serve": "rollup -c -w",
     "lint": "standard",
-    "prepublishOnly": "npm test"
+    "start": "sirv public"
   },
-  "dependencies": {},
   "devDependencies": {
-    "serve": "^11.3.0",
-    "standard": "^14.3.1"
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-size-snapshot": "^0.11.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "cryptology": "^1.0.0",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
   },
   "repository": {
     "type": "git",

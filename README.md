@@ -48,7 +48,7 @@ In order for our data analysts and journalists to create content [like this](htt
 
 They need to be given free access to clean fresh data.
 
-If we think of the combined super computer mentioned above 
+If we think of the combined super computer mentioned above
 as an ant colony, it is easier to imagine the self-organising hyper system that I am about to propose.
 
 This game is but one type of ant that inhabits the imagined hive.
@@ -66,7 +66,7 @@ In other words enriching the data with real business value.
 Ok, so now we have generated the data and we've cleaned it
 but how do we do we deliver it to our analysts?
 
-As it turns out, we're lucky! 
+As it turns out, we're lucky!
 
 This problem has already been solved by another community of brilliant hackers.
 They've created a type secure feed that excels at distribution.
@@ -80,7 +80,7 @@ I plan to design the collector-ant to record the enriched statements in such fee
 This will give our analysts unrestricted and immediate access to a stream of clean fresh data.
 ```
 
-And what I believe is the absolutely best part; 
+And what I believe is the absolutely best part;
 Is that the architecture is designed in such a way that anyone is free
 to create their own breed of ants or design their own hyper system.
 
@@ -178,8 +178,12 @@ If you have any questions, PLEASE OPEN AN ISSUE -
 I'll do my best to gingerly provide an answer.
 
 I publish all of my work as Libre software and will continue to do so,
-please drop me a penny at Patreon: https://www.patreon.com/decentlabs
-and help fund experiments like these.
+please drop me a penny at Patreon and help fund experiments like these.
+
+Patreon: https://www.patreon.com/decentlabs
+Github: https://github.com/telamon/survive.click
+Discord: https://discord.gg/K5XjmZx
+Telegram: https://t.me/decentlabs_se
 ```
 
 ## <a name="Develop"></a> Develop
@@ -198,7 +202,7 @@ git push
 
 ## <a name="contribute"></a> Contributing
 
-Ideas and contributions to the project are welcome. But you must follow the [guidelines](https://github.com/telamon/survive.click/blob/master/CONTRIBUTING.md).
+Ideas and contributions to the project are welcome but must follow the [guidelines](https://github.com/telamon/survive.click/blob/master/CONTRIBUTING.md).
 
 ## License
 

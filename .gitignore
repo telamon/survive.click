@@ -2,3 +2,5 @@ package-lock.json
 yarn-debug.log*
 yarn-error.log*
 node_modules/
+.size-snapshot.json
+public/build
