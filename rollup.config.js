@@ -88,15 +88,30 @@ function petrify (input, output) {
   return {
     writeBundle (opts, bundle) {
       let html = readFileSync(input).toString('utf8')
+
+      // inline js
       for (const name in bundle) {
         const artefact = bundle[name]
         // inline js when found.
         const rexp = new RegExp(`<script[^>]+src=[^>]+${artefact.fileName}[^>]+>`)
         if (html.match(rexp)) {
           console.log('Inlining artefact', name)
-          html = html.replace(rexp, `<script KENBOU>${artefact.code}`)
+          html = html.replace(rexp, `<script>window.addEventListener('DOMContentLoaded',ev => { ${artefact.code} })`)
         }
       }
+
+      // fugly inline css
+      const cexp = new RegExp(`<link[^>]+href=['"]([^'"]+\.css)['"][^>]*>`)
+      let m
+      while (m = html.match(cexp)) {
+        const file = `public${m[1]}`
+        const css = readFileSync(file)
+        console.log(`Inlining ${file}`)
+        html = html.replace(m[0], `<!-- inline ${file} -->
+          <style>${css.toString('utf8')}</style>
+        `)
+      }
+      // write out the destination
       mkdirSync(dirname(output), { recursive: true })
       writeFileSync(output, Buffer.from(html, 'utf8'))
       console.log(output, `written ${html.length >> 10}k`)
